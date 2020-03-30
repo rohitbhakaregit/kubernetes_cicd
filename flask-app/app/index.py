@@ -1,5 +1,4 @@
 from flask import Flask
-background-image: url('http://www.pngmart.com/files/2/Mario-PNG-Image.png')
 app = Flask(__name__)
 @app.route("/")
 def hello():
