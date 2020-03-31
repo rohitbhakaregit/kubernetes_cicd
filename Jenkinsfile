@@ -24,7 +24,7 @@ pipeline {
 
       stage ('Helm_deploy') {
           steps{
-               sh label: 'helm', script: 'helm upgrade  k8s-deploy --set appVersion=${BUILD_NUMBER} ./helm-deploy'
+               sh label: 'helm', script: 'helm install  k8s-deploy --set appVersion=${BUILD_NUMBER} ./helm-deploy ||helm upgrade  k8s-deploy --set appVersion=${BUILD_NUMBER} ./helm-deploy'
                }
                            }
 
