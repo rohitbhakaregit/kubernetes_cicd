@@ -21,11 +21,6 @@ pipeline {
                            }
 
       
-      stage ('delete_dir') {
-          steps{
-            deleteDir()
-               }
-                           }
                           
                            
                            
