@@ -32,3 +32,5 @@ pipeline {
                            
           }
 }
+
+//for dokcer either configure docker agent or store your credentials at /var/lib/jenkins/.docker/config.json
