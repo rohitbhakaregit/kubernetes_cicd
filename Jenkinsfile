@@ -20,6 +20,14 @@ pipeline {
                }
                            }
 
+
+
+      stage ('Helm_deploy') {
+          steps{
+               sh label: 'helm', script: 'helm upgrade  k8s-deploy --set appVersion=${BUILD_NUMBER} ./helm-deploy'
+               }
+                           }
+
       
                           
                            
